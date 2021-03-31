@@ -16,11 +16,13 @@ Para ejecutar proyecto :
 2-. en consola cmd
 
 2.1-. npm install
+
 2.2-. ng serve
 
 En modulo de login, las credenciales de prueba son :
 
 usuario : pauly@escalab.cl
+
 password : 123456
 
 
