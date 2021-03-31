@@ -9,7 +9,7 @@ Muestra indicadores economicos mensuales.
 
 Para bajar el proyecto (tener instalado git) :
 
-1-. git clone https://github.com/paulinaacs/indicadoreseconomicos.git
+1-. git clone https://github.com/paulinaacs/indicadores.git
 
 Para ejecutar proyecto :
 
