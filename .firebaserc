@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "indicadoreseconomicos-26dbf": {
+      "hosting": {
+        "appangular": [
+          "indicadoreseconomicos-26dbf"
+        ]
+      }
+    }
+  }
+}

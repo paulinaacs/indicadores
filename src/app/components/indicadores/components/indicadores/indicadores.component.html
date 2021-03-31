@@ -1,0 +1,72 @@
+<div class="bg">
+  <div class="card text-center">
+    
+      <div class="card-header">
+        <h4><span style="color:#3498DB"> CONSULTA DE INDICADORES ECONOMICOS</span></h4>
+        <span style="color:red">uf - ivp - dolar - dolar_intercambio - euro - ipc - utm - imacec - tpm - libra_cobre - tasa_desempleo - bitcoin</span>
+
+      </div>
+          
+      <div class="image">
+            <div class="container">
+                <div class="row text-black">
+                    <div class="col-sm-10 mx-auto text-center form p-5">                     
+                        <div class="px-2">                
+             
+
+                              <mat-toolbar>    
+                                <div class="row">                  
+                                  <div class="col">                   
+                                    <input matInput [(ngModel)]=" indicador" (input)="obtenerDatosPorIndicador()" maxlength="20" style="width: 250px ; border-style: solid;border-color: #92a8d1;" class="mr5 card text-center" type="text" placeholder="Ingrese Indicador Ej: uf" oninput="this.value=this.value.toLowerCase()">                    
+                                  </div>            
+                                </div>
+                              </mat-toolbar>  
+
+                              <mat-table [dataSource]="asyncResultadoPorIndicador$" class="mat-elevation-z8">
+
+                                <ng-container matColumnDef="nombre">
+                                  <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+                                  <mat-cell *matCellDef="let element"> {{nombre}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="fecha">
+                                  <mat-header-cell *matHeaderCellDef> Fecha </mat-header-cell>
+                                  <mat-cell *matCellDef="let element"> {{element.fecha | date:'dd/MM/y'}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="valor">
+                                  <mat-header-cell *matHeaderCellDef> Valor </mat-header-cell>
+                                  <mat-cell *matCellDef="let element"> {{element.valor}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="unidad">
+                                  <mat-header-cell *matHeaderCellDef> Unidad Medida </mat-header-cell>
+                                  <mat-cell *matCellDef="let element"> {{unidad_medida}} </mat-cell>
+                                </ng-container>
+                             
+                                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                                <mat-row *matRowDef="let row ; columns: displayedColumns" ></mat-row>                               
+                                
+                              </mat-table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          
+            
+           
+     
+         
+          
+  
+          
+      </div> 
+    </div>
+
+
+
+
+
+
+      

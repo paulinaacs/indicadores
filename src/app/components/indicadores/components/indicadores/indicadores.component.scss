@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+  }
+  mat-toolbar{
+    justify-content: center;  
+    background-color:rgba(0, 0, 0, 0.03);
+    width: auto;
+  }
+  mat-header-cell { 
+    justify-content: center;
+    color: #3498DB;
+    background-color:#EBDEF0;
+    width: auto;
+    font-weight: bold;
+    font-size:  2ex;
+  }
+
+  mat-cell {
+    justify-content: center;
+    color:black;
+    background-color:white;
+    width: auto;
+  }
+
+ 
+  .image{
+    height:40em; background-size:cover; width:auto;
+    background-image:url('../../../../../assets/Back.jpg');
+    background-position:50% 50%;
+    width: 100%;
+    height: auto;
+  }
+
+  .customClass {
+    margin-top: 35px;
+    // whatever you want
+  }
+
+ 
+
+  p.solid {border-style: solid;}
+
+ 
+ 
